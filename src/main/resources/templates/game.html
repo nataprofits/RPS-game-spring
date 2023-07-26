@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Rock Paper Scissors Game</h1>
+<ul th:each="move : ${moves}">
+    <li th:text="${move}"></li>
+</ul>
+
+<form th:action="@{/play}" method="post">
+    <label for="userMove">Enter your move (rock, paper, scissors): </label>
+    <input type="text" id="userMove" name="userMove">
+    <button type="submit">Submit Move</button>
+</form>
+</body>
+</html>
