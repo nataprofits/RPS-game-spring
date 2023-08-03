@@ -17,7 +17,7 @@ public class ComputerPlayer implements Player {
     @Override
     public String makeMove() {
         String[] moves = gameRule.getMoves();
-        // Get a random index for a valid move
+
         int index = (int) (Math.random() * moves.length);
         move = moves[index];
         return move;
