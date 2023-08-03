@@ -1,4 +1,4 @@
-package com.example.RPSgamespring.model;
+package com.example.RPSgamespring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
